@@ -5,6 +5,5 @@ import org.junit.platform.suite.api.Suite
 
 @Suite
 @SelectClasspathResource("feature")
-@ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@Wip")
 @ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "not @Todo")
 class RunCucumber
